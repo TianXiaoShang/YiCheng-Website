@@ -49,6 +49,11 @@
     height: 18.6vw;
 }
 
+.swiper-container .swiper-wrapper .swiper-slide img {
+    width: 100vw;
+    height: 18.6vw;
+}
+
 .company-profile .company-content-box p {
     margin-top: 1em;
     color: #333;
@@ -409,6 +414,9 @@
     }
     .index-wrapper {
         display: block;
+    }
+    .swiper-container .swiper-wrapper .swiper-slide {
+        height: 60vw;
     }
     .new-center-wrapper .news-profile {
         width: 100%;

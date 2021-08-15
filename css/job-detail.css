@@ -44,6 +44,9 @@
 }
 
 @media screen and (max-width: 900px) {
+    .swiper-wrapper {
+        display: none !important;
+    }
     .job-name {
         display: flex;
         justify-content: space-between;

@@ -17,6 +17,14 @@
     margin-top: 90px !important;
 }
 
+.g-pc-img {
+    display: block;
+}
+
+.g-mobile-img {
+    display: none;
+}
+
 .gm-header {
     display: none;
 }
@@ -443,6 +451,12 @@
 }
 
 @media screen and (max-width: 900px) {
+    .g-pc-img {
+        display: none;
+    }
+    .g-mobile-img {
+        display: block;
+    }
     .g-wrapper {
         min-width: 100%;
     }
