@@ -1,0 +1,76 @@
+.topmenu {
+    display: none;
+}
+
+.company {
+    padding: 0 20px;
+    margin-top: 58px;
+}
+
+.company .company-title {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    line-height: 22px;
+    margin-bottom: 38px;
+}
+
+.company .company-title .company-title-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.company .company-section {
+    margin-bottom: 28px;
+}
+
+.company .company-section .company-section-title {
+    font-weight: bold;
+    color: #0061ae;
+    margin-bottom: 10px;
+}
+
+.company .company-section p {
+    font-size: 14px;
+    line-height: 24px;
+    text-indent: 2em;
+}
+
+@media screen and (max-width: 900px) {
+    .company .company-title {
+        display: none;
+    }
+    .company .company-title .company-title-icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+    .company .company-section {
+        margin-bottom: 28px;
+    }
+    .company .company-section .company-section-title {
+        font-weight: bold;
+        color: #0061ae;
+        margin-bottom: 10px;
+    }
+    .company .company-section p {
+        font-size: 14px;
+        line-height: 24px;
+        text-indent: 2em;
+    }
+    .topmenu {
+        display: block;
+        margin-bottom: 100px;
+    }
+    .topmenu dt {
+        width: 100% !important;
+    }
+    .topmenu .s_text {
+        width: 90%;
+        position: relative;
+        right: 0;
+    }
+}

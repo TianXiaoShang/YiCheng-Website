@@ -1,0 +1,150 @@
+.query-list {
+    margin-top: 10px;
+}
+
+.query-list .query {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.query-list .query .query-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    line-height: 40px;
+    margin: 0 26px;
+}
+
+.query-list .query .query-tag {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #666;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 15px;
+    margin-right: 16px;
+}
+
+.query-list .query .query-tag:hover {
+    color: #fff;
+    background: #009cff;
+    border: none;
+}
+
+.query-list .query .query-tag-current {
+    color: #fff;
+    background: #009cff;
+    border: none;
+}
+
+.topmenu {
+    display: none;
+}
+
+.jobs {
+    margin-top: 40px;
+}
+
+.jobs .job {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 46px 0;
+}
+
+.jobs .job .info {
+    width: 1160px;
+}
+
+.jobs .job .info .job-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    line-height: 22px;
+    margin-bottom: 16px;
+}
+
+.jobs .job .info .salary {
+    font-size: 24px;
+    font-weight: 800;
+    color: #e62129;
+    line-height: 22px;
+    margin-bottom: 25px;
+}
+
+.jobs .job .info .salary .salary-icon {
+    font-size: 18px;
+}
+
+.jobs .job .info .condition {
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    line-height: 24px;
+}
+
+.jobs .tel {
+    width: 102px;
+    height: 40px;
+    line-height: 40px;
+    background: #e62129;
+    border-radius: 2px;
+    width: 102px;
+    height: 40px;
+    border-radius: 2px;
+    text-align: center;
+    display: block;
+    color: #fff;
+}
+
+.pages {
+    justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+    .job-box {
+        background: #f2f4f7;
+    }
+    .job-box .jobs {
+        margin-top: 40px;
+    }
+    .job-box .jobs .job {
+        background: #fff;
+        border-radius: 4px;
+        position: relative;
+        border-bottom: none;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .job-box .jobs .job .info {
+        width: 100%;
+    }
+    .job-box .jobs .job .info .job-title {
+        margin-bottom: 12px;
+    }
+    .job-box .jobs .job .info .salary {
+        font-size: 22px;
+    }
+    .job-box .jobs .tel {
+        position: absolute;
+        right: 20px;
+        top: 30px;
+    }
+    .query-list {
+        display: none;
+    }
+    .topmenu {
+        display: block;
+    }
+    .topmenu .s_text {
+        width: 60%;
+        position: relative;
+        right: -20%;
+    }
+}

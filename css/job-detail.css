@@ -1,0 +1,114 @@
+.job-name {
+    display: none;
+}
+
+.job tr {
+    display: flex;
+}
+
+.job tr:first-child .job-title {
+    border-top: 1px solid #ddd;
+}
+
+.job tr:first-child .job-des {
+    border-top: 1px solid #ddd;
+}
+
+.job tr td {
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+.job tr .job-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: center;
+    width: 140px;
+    padding: 14px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.job tr .job-des {
+    width: 1060px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    line-height: 24px;
+    padding: 14px 40px;
+    border-right: 1px solid #ddd;
+}
+
+@media screen and (max-width: 900px) {
+    .job-name {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px;
+    }
+    .job-name .job-name-text {
+        font-size: 18px;
+        font-family: Source Han Sans CN;
+        font-weight: bold;
+        color: #333;
+        line-height: 22px;
+        margin-bottom: 15px;
+    }
+    .job-name .salary {
+        font-size: 18px;
+        font-family: Source Han Sans CN;
+        font-weight: bold;
+        color: #e62129;
+        line-height: 22px;
+    }
+    .job-name .job-date {
+        font-size: 14px;
+        font-family: Source Han Sans CN;
+        font-weight: 400;
+        color: #999;
+        line-height: 22px;
+    }
+    .job {
+        width: 100%;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+    .job tr {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .job tr:first-child .job-title {
+        border-top: none;
+    }
+    .job tr:first-child .job-des {
+        border-top: none;
+    }
+    .job tr td {
+        border-bottom: none;
+        border-left: none;
+    }
+    .job tr .job-title {
+        font-size: 14px;
+        font-weight: bold;
+        color: #333;
+        line-height: 24px;
+        text-align: left;
+        vertical-align: center;
+        display: block;
+        padding: 14px 0;
+    }
+    .job tr .job-des {
+        font-size: 14px;
+        font-weight: 500;
+        color: #666;
+        line-height: 24px;
+        padding: 0;
+        border-right: none;
+        box-sizing: border-box;
+        width: 100%;
+    }
+}

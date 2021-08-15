@@ -1,0 +1,110 @@
+.cases {
+    margin-top: 40px;
+}
+
+.cases .case {
+    width: 1160px;
+    display: flex;
+    background: url("../image/case-logo.png") right bottom no-repeat #009cff;
+    margin-bottom: 70px;
+}
+
+.cases .case .c-cover {
+    display: block;
+    width: 440px;
+    height: 330px;
+}
+
+.cases .case .c-info {
+    width: 760px;
+    height: 330px;
+}
+
+.cases .case .c-info .c-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 42px;
+    background: url("../image/bussiness-redtag.png") 0 0 no-repeat;
+    width: 190px;
+    height: 54px;
+    margin-left: -10px;
+    margin-top: 32px;
+    text-align: center;
+}
+
+.cases .case .c-info .c-title2 {
+    width: 324px;
+    background: url("../image/bussiness-redtag2.png") 0 0 no-repeat;
+}
+
+.cases .case .c-info .c-line {
+    width: 68px;
+    height: 2px;
+    background: #fafafa;
+    margin: 26px 55px;
+}
+
+.cases .case .c-info .c-desc {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 24px;
+    margin: 0 54px;
+}
+
+.news-center-swiper-container {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .cases {
+        display: none;
+    }
+    .news-center-swiper-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: block;
+        position: relative;
+    }
+    .news-center-swiper-container .swiper-pagination {
+        bottom: auto;
+        top: 50vw;
+    }
+    .news-center-swiper-container .swiper-pagination-bullet {
+        width: 6px;
+        height: 6px;
+        border-radius: 6px;
+        z-index: 999;
+        background-color: #fff;
+        opacity: 1;
+    }
+    .news-center-swiper-container .swiper-pagination-bullet-active {
+        z-index: 999;
+        background-color: #009cff;
+    }
+    .news-center-swiper-container .swiper-wrapper {
+        width: 100%;
+    }
+    .news-center-swiper-container .swiper-wrapper .swiper-slide {
+        font-size: 0;
+        cursor: pointer;
+        position: relative;
+    }
+    .news-center-swiper-container .swiper-wrapper .swiper-slide img {
+        width: 100%;
+        height: 60vw;
+    }
+    .news-center-swiper-container .swiper-wrapper .swiper-slide .news-desc {
+        width: 100%;
+        font-size: 18px;
+        font-family: Source Han Sans CN;
+        font-weight: 400;
+        color: #666;
+        line-height: 32px;
+        background: #f2f4f7;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+}

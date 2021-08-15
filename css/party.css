@@ -1,0 +1,157 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    min-width: 1120px;
+}
+
+.container .menu {
+    width: 240px;
+    background: #fafafa;
+}
+
+.container .menu .menu-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    line-height: 82px;
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+
+.container .menu .menu-item {
+    font-size: 16px;
+    font-weight: 500;
+    color: #4b556b;
+    line-height: 40px;
+    height: 40px;
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+
+.container .menu .menu-item-current {
+    background: url("../image/party-menu-item-icon.png") 20px center no-repeat rgba(0, 97, 174, 0.15);
+}
+
+.container .article-lists {
+    width: 870px;
+}
+
+.container .article-lists .article {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 40px;
+}
+
+.container .article-lists .article .article-left {
+    width: 64px;
+    background: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+    overflow: hidden;
+    height: 64px;
+}
+
+.container .article-lists .article .article-left .date-head {
+    line-height: 23px;
+    background: #0061ae;
+    font-size: 12px;
+    font-family: Source Han Sans CN;
+    font-weight: bold;
+    color: #fff;
+}
+
+.container .article-lists .article .article-left .date-foot {
+    font-size: 26px;
+    font-family: Source Han Sans CN;
+    font-weight: 800;
+    color: #0056a3;
+    line-height: 40px;
+}
+
+.container .article-lists .article .article-right {
+    width: 780px;
+}
+
+.container .article-lists .article .article-right .article-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    line-height: 22px;
+    margin-bottom: 23px;
+}
+
+.container .article-lists .article .article-right .article-content {
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    line-height: 28px;
+    margin-bottom: 29px;
+}
+
+.container .article-lists .article .article-right .article-btn {
+    font-size: 14px;
+    font-weight: 400;
+    color: #596efb;
+    line-height: 28px;
+    text-decoration: none;
+    margin-bottom: 27px;
+    display: block;
+}
+
+.container .article-lists .article .article-right .a-date {
+    font-size: 12px;
+    font-weight: 400;
+    color: #999;
+    line-height: 27px;
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        min-width: 100%;
+    }
+    .container .menu {
+        display: none;
+    }
+    .container .article-lists {
+        width: 100%;
+    }
+    .container .article-lists .article {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #ddd;
+    }
+    .container .article-lists .article .article-left {
+        height: 84px;
+        width: 18%;
+        margin-bottom: 10px;
+    }
+    .container .article-lists .article .article-left .date-head {
+        line-height: 30px;
+    }
+    .container .article-lists .article .article-left .date-foot {
+        line-height: 50px;
+    }
+    .container .article-lists .article .article-right {
+        margin-bottom: 10px;
+        width: 74%;
+    }
+    .container .article-lists .article .article-right .article-title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+        line-height: 30px;
+        margin-bottom: 2px;
+        white-space: normal;
+    }
+    .container .article-lists .article .article-right .article-content {
+        display: none;
+    }
+    .container .article-lists .article .article-right .article-btn {
+        display: none !important;
+    }
+    .container .article-lists .article .article-right .a-date {
+        display: block;
+    }
+}

@@ -1,0 +1,43 @@
+.article-title {
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.article-title .article-title-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+.article-title .article-title-time {
+    font-size: 16px;
+    font-weight: 500;
+    color: #999;
+    line-height: 22px;
+}
+
+.cover {
+    width: 988px;
+    margin: 0 auto 50px;
+    display: block;
+}
+
+@media screen and (max-width: 900px) {
+    .article-title {
+        padding: 0;
+    }
+    .article-title-text {
+        text-align: left;
+    }
+    .article-title-time {
+        text-align: left;
+    }
+    .cover {
+        width: 100%;
+        margin: 0 auto 20px;
+        display: block;
+    }
+}
