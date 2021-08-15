@@ -41,6 +41,9 @@
     #location .infoBoxContent {
         display: none;
     }
+    .info {
+        display: block;
+    }
     .info .cor-name {
         font-size: 18rpx;
         font-family: Source Han Sans CN;

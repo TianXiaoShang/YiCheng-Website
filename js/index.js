@@ -35,12 +35,11 @@ var newsSwiper2 = new Swiper('.news-center-swiper-container', {
         el: '.swiper-pagination',
     },
     speed: 800,
-    autoplay: false,
-    // autoplay: {
-    //     delay: 5000,
-    //     stopOnLastSlide: false,
-    //     disableOnInteraction: true,
-    // },
+    autoplay: {
+        delay: 5000,
+        stopOnLastSlide: false,
+        disableOnInteraction: true,
+    },
 })
 
 
