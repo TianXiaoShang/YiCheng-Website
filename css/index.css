@@ -1,17 +1,70 @@
 .launch {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.launch-bg{
+    width: 100%;
+    height: 730px;
+    background:url(../image/bg-animate.png) center 0 no-repeat;
+    opacity: 0;
+}   
+
+.launch-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top:28vh;
+    text-align: center;
+    z-index: 200;
+    transform: scale(1.4);
+    opacity: 0.2;
+    transition: 1s all linear
+}
+.launch-content-animated{
+    transform: scale(1);
+    opacity: 1;
 }
 
-.launch .launch-img {
-    width: 100vw;
-    height: 100vh;
+.lau-logo{
+    width: 204px;
+    height: 212px
 }
 
+.lau-cor{
+    font-size: 62px;
+    font-weight: bold;
+    color: #0464AF;
+    line-height: 36rpx;
+    margin:40px 0 107px;
+    width: 100%
+}
+.lau-slogen{
+    font-size: 52px;
+    font-weight: 500;
+    color: #318CC9;
+    line-height: 36px;
+}
+.launch-foot{
+    background:url(../image/foot-bg.png) center bottom no-repeat;
+    width:100%;
+    height: 267px;
+    position: absolute;
+    bottom:0;
+    transform: translateY(80%);
+    transition:all .6s  linear
+}
+.launch-foot-animated{
+    transform: translateY(0)
+}
 #main-nav {
     display: none;
 }
@@ -406,14 +459,32 @@
 }
 
 @media screen and (max-width: 900px) {
-    .launch {
-        display: none;
+    .launch{
+        display: flex;
     }
-    #main-nav {
-        display: block;
+    .launch-bg{
+        background-size: 100vw 40vw;
+    }
+    .launch-content{
+        top:36vh;
+    }
+    .lau-logo{
+        width: 102px;
+        height:106px;
+    }
+    .lau-cor{
+        font-size: 24px;
+        margin:10px 0 30px;
+        padding: 0 20px
+    }
+    .launch-foot{
+        background-size: 100vw 30vw;
+    }
+    .lau-slogen{
+        font-size: 18px;
     }
     .index-wrapper {
-        display: block;
+        display: none;
     }
     .swiper-container .swiper-wrapper .swiper-slide {
         height: 60vw;
@@ -585,4 +656,5 @@
     .group-announcement-wrapper .group-announcement-box .ann-item .info .date img {
         display: none;
     }
+    
 }

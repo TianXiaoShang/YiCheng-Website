@@ -43,14 +43,28 @@ var newsSwiper2 = new Swiper('.news-center-swiper-container', {
 })
 
 
-$('.launch-img').bind('load', () => {
-    console.log('load')
+
+$('document').ready(function(){
+    var width = $('window').width()
+    setTimeout(() => {
+        $('.launch-bg').animate({
+            opacity: 1
+        }, 400)
+        $('.launch-content').addClass("launch-content-animated")
+        $('.launch-foot').addClass('launch-foot-animated')
+    },100)
     setTimeout(() => {
         $('.launch').fadeOut('2000');
         $('.main-nav').css('display', 'block')
         $('.g-wrapper').css('display', 'block')
+        if(width <= 900 ){
+            $('.index-wrapper').css('display', 'block')
+
+        }
     }, 2000)
 })
+
+
 
 // const appSlider = new Swiper('.appSlider', {
 //     loop: true,
