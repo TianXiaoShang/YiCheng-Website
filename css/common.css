@@ -357,12 +357,17 @@
     border-radius: 4px;
     cursor: pointer;
 }
+.g-show-more>div a{
+    color: #0056a3;
+}
 
 .g-show-more>div:hover {
     background: #0056a3;
     color: #fff;
 }
-
+.g-show-more>div:hover a{
+    color: #fff;
+}
 .g-pages {
     padding: 0 18px;
     margin-top: 50px;

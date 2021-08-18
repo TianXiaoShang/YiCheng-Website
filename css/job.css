@@ -42,6 +42,10 @@
     border: none;
 }
 
+.query-list .query .query-tag-current a{
+    color: #fff;
+}
+
 .topmenu {
     display: none;
 }
