@@ -37,7 +37,8 @@
     position: absolute;
     box-sizing: border-box;
 		left: 0;
-		
+		box-sizing: border-box;
+		padding: 0 10px;
 		z-index:200;
 }
 

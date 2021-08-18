@@ -94,6 +94,10 @@ summary {
     display: block;
 }
 
+a{
+    color: black;
+}
+
 
 /* Handle box-sizing while better addressing child elements:
    http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
