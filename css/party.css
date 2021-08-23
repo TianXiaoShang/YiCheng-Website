@@ -40,7 +40,18 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #ddd;
-    margin-bottom: 40px;
+    padding: 30px 20px;
+}
+
+.container .article-lists .article:hover {
+    background: #eee;
+}
+
+.container .article-lists .article a {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
 }
 
 .container .article-lists .article .article-left {
@@ -70,7 +81,7 @@
 }
 
 .container .article-lists .article .article-right {
-    width: 780px;
+    width: 740px;
 }
 
 .container .article-lists .article .article-right .article-title {
