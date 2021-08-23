@@ -15,36 +15,10 @@
 
 
 
-var mySwiper = new Swiper('.swiper-container', {
-    loop: true, // 循环模式选项
-    // 如果需要分页器
-    pagination: {
-        el: '.swiper-pagination',
-    },
-    speed: 800,
-    autoplay: {
-        delay: 5000,
-        stopOnLastSlide: false,
-        disableOnInteraction: true,
-    },
-})
-var newsSwiper2 = new Swiper('.news-center-swiper-container', {
-    loop: true, // 循环模式选项
-    // 如果需要分页器
-    pagination: {
-        el: '.swiper-pagination',
-    },
-    speed: 800,
-    autoplay: {
-        delay: 5000,
-        stopOnLastSlide: false,
-        disableOnInteraction: true,
-    },
-})
 
 
 
-$('document').ready(function(){
+$('document').ready(function() {
     var width = $('window').width()
     setTimeout(() => {
         $('.launch-bg').animate({
@@ -52,16 +26,46 @@ $('document').ready(function(){
         }, 400)
         $('.launch-content').addClass("launch-content-animated")
         $('.launch-foot').addClass('launch-foot-animated')
-    },100)
+    }, 100)
     setTimeout(() => {
         $('.launch').fadeOut('2000');
         $('.main-nav').css('display', 'block')
         $('.g-wrapper').css('display', 'block')
-        if(width <= 900 ){
+        if (width <= 900) {
             $('.index-wrapper').css('display', 'block')
-
         }
+
+        var mySwiper = new Swiper('.swiper-container', {
+            loop: true, // 循环模式选项
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            speed: 800,
+            autoplay: {
+                delay: 5000,
+                stopOnLastSlide: false,
+                disableOnInteraction: true,
+            },
+        })
+        var newsSwiper2 = new Swiper('.news-center-swiper-container', {
+            loop: true, // 循环模式选项
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            speed: 800,
+            autoplay: {
+                delay: 5000,
+                stopOnLastSlide: false,
+                disableOnInteraction: true,
+            },
+        })
+
     }, 2000)
+
+
+
 })
 
 
