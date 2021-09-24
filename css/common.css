@@ -489,6 +489,53 @@
     margin-right: 6px;
 }
 
+
+/* 补充备案 */
+.g-foot {
+    height: 168px;
+}
+.g-foot .foot-content {
+    padding-bottom: 69px;
+    position: relative;
+}
+.g-foot .foot-content .info-des{
+    position: absolute;
+    left : 50%;
+    width: 100%;
+    justify-content: center;
+    transform: translate(-50%, 0);
+    display: flex;
+    bottom: 25px;
+    color: white;
+}
+.g-foot .foot-content .info-des .item{
+    margin-left: 30px;
+}
+.g-foot .foot-content .info-des a{
+    color: white;
+}
+@media screen and (max-width: 900px) {
+    .g-foot {
+        height: auto;
+    }
+    .g-foot .foot-content .info-des{
+        margin-top: 10px;
+        display: block;
+        word-break:break-all;
+        font-size: 14px;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: translate(0, 0);
+    }
+    .g-foot .foot-content {
+        padding-bottom: 25px;
+    }
+    .g-foot .foot-content .info-des .item{
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}
 @media screen and (max-width: 900px) {
     .g-pc-img {
         display: none;
